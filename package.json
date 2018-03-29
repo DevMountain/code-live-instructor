@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "sync-start": "./bin/demo-global.js"
+    "sync-start": "./bin/global.js"
   },
   "preferGlobal": true,
   "bugs": {
