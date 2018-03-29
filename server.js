@@ -18,12 +18,22 @@ function copyData(savPath, srcPath) {
     });
 }
 
+function createDir(savPath, srcPath) {
+  fs.readdir(srcPath, 'utf8', function (err, data) {
+          if (err) throw err;
+          io.emit('createDir', {data: data, path: savPath})
+  });
+}
+
+
 // ignoring .dotfiles and node_modules
 let watcher = chokidar.watch('.', {ignored: [/(^|[\/\\])\../, 'node_modules']})
 
 watcher.on('all', (event, path) => {
   console.log(event, path)
-  if(event !== 'addDir' && path === 'test.js') {
+  if(event === 'addDir') {
+    createDir(path, path)
+  } else if(event !== 'unlink'){
     copyData(path, path)
   }
 });  
