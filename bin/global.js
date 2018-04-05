@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-var myLibrary = require('../lib/index.js');
+let myLibrary = require('../lib/index.js');
 
 myLibrary.server()
