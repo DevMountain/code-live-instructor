@@ -1,7 +1,7 @@
 {
   "name": "code-live-instructor",
   "version": "1.0.0",
-  "description": "",
+  "description": "A tool that allows live syncing from an instructor's code project to a student's computer. Must be paired with code-live-student.",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,9 +13,19 @@
   },
   "keywords": [],
   "author": "",
+  "contributors": [
+    {
+      "name": "Joe Blank",
+      "url": "https://github.com/joeblank"
+    },
+    {
+      "name": "Missy Beutler",
+      "url": "https://github.com/missyjeanbeutler"
+    }
+  ],
   "license": "ISC",
   "bin": {
-    "sync-start": "./bin/global.js"
+    "code-live-start": "./bin/global.js"
   },
   "preferGlobal": true,
   "bugs": {
