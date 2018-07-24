@@ -1,6 +1,6 @@
 {
   "name": "code-live-instructor",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A tool that allows live syncing from an instructor's code project to a student's computer. Must be paired with code-live-student.",
   "main": "lib/index.js",
   "scripts": {
